@@ -1,0 +1,7 @@
+<%= select_tag :studio_id,
+        options_from_collection_for_select(@studios, :id, :name, selected:@studio_id),
+        include_blank:true,
+        prompt:"Studioを選択" %>
+<div id=sub_search>
+  <%= render partial:"sub_search" %>
+</div>

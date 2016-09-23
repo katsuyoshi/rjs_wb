@@ -1,0 +1,13 @@
+<%= render 'search' %>
+
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Movies</h1>
+
+<div id=movies>
+  <%= render partial:"index" %>
+</div>
+
+<br>
+
+<%= link_to 'New Movie', new_movie_path %>

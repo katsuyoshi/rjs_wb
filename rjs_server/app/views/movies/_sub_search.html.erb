@@ -1,0 +1,1 @@
+<%= select_tag :movie_id, options_from_collection_for_select(@movies, :id, :title), include_blank:true, prompt:"Movieを選択", html:{ id: :studio_selection } %>
